@@ -1,25 +1,42 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
+# ─── Go Binaries and Build Output ───────────────────────────────
 *.exe
 *.exe~
 *.dll
 *.so
 *.dylib
-
-# Test binary, built with `go test -c`
 *.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
+# ─── Go Modules and Workspace ───────────────────────────────────
 go.work
 go.work.sum
 
-# env file
+# ─── Dependencies ───────────────────────────────────────────────
+# Uncomment if using vendoring
+# vendor/
+
+# ─── Environment and Logs ───────────────────────────────────────
 .env
+*.log
+
+# ─── IDE: GoLand ────────────────────────────────────────────────
+.idea/*
+!.idea/dictionaries/
+!.idea/inspectionProfiles/
+!.idea/.gitignore
+!.idea/icon.png
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf/
+
+# ─── Databases ──────────────────────────────────────────────────
+*.db
+*.sqlite
+
+# ─── Docker (optional) ──────────────────────────────────────────
+.docker/
+*.tar
+*.img
+
+# ─── Object Files (C/C++ or CGO) ────────────────────────────────
+*.o
